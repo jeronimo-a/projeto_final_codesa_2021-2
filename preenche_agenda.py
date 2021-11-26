@@ -66,7 +66,7 @@ for i in range(12):
     conteudo = (
         DADOS['meses-limpos'][i],           # primeira informação
         DADOS['meses-limpos'][i].title(),   # segunda
-        DADOS['meses-limpos'][i].title(),   # terceia
+        DADOS['meses-limpos'][i].upper(),   # terceia
         dias[0],                            # etc.
         random.choice(DADOS['eventos']),
         dias[1],
