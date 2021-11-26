@@ -1,0 +1,20 @@
+# Projeto final Co-Design de Aplicativos: STUDYING
+# 
+# Lista de eventos placeholders para a agenda
+# 
+# 2021-2 Grupo 08
+# 
+# - Breno Brolacci Schiavon
+# - Jerônimo de Abreu Afrange
+# - João Manoel Pasqua Filho
+# - Luana de Matos Sorpreso
+
+Vestibular Insper
+FUVEST
+Vestibular UNICAMP
+Prazo de inscrição Insper
+Prazo de inscrição FUVEST
+Segunda fase vestibular do Zé
+Rolê no Sujus
+Rolezinho do Neymar
+Prazo de inscrição vestibular X
