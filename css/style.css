@@ -1,0 +1,102 @@
+/*
+    Configuração de estilo geral do aplicativo
+
+    Projeto final Co-Design de Aplicativos
+
+    2021-2 Grupo 08
+
+    - Breno Brolacci Schiavon
+    - Jerônimo de Abreu Afrange
+    - João Manoel Pasqua Filho
+    - Luana de Matos Sorpreso
+*/
+
+body {      /* Estilização da cláusula geral de conteúdo */
+    background-color: #61DCF2;          /* Cor geral de fundo */
+    font-family: 'Spartan', sans-serif; /* Fonte principal */
+    color: white;                       /* Cor de texto principal */
+}
+
+header {    /* Estilização do cabeçalho */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-bottom: .1rem solid;
+    border-color: #CF5E4A;
+    flex-direction: column;
+    background-color: #428C99;
+    padding-top: 0.5rem;
+}
+
+h1 {        /* Estilização do título do aplicativo */
+    font-size: 1.8rem;  /* Temanho da fonte */
+    font-weight: bold;
+}
+
+h2 {        /* Estilização do subtítulo da páginas */
+    font-size: 1.5rem;  /* Tamanho da fonte */
+    padding-top: 1.5rem;
+}
+
+a {         /* Impede que os textos com links fiquem destacados */
+    color: inherit;
+}
+
+img {       /* Estilização de elementos img */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+main {      /* Estilização do conteúdo principal */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+ul {    /* Estilização de listas não-ordenadas */
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+li {    /* Estilização de elementos de listas */
+    display: block;
+    margin: .5rem;
+    border: .1rem solid;
+    border-color: #CF5E4A;
+    padding: 1rem 1rem 1rem 1rem;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-position: 1rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: #428C99; 
+    text-decoration: none;
+}
+
+.coluna {   /* Classe que especifica orientação em colunas */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linha {    /* Classe que especifica orientação em linhas */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fantasma { /* Classe para texto fantasma usado para consistência de posicionamento com ou sem subtítulo de página */
+    color: #61DCF2;
+}
