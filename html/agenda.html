@@ -1,7 +1,7 @@
 <!--
     Projeto final Co-Design de Aplicativos: STUDYING
 
-    Página principal do aplicativo
+    Página da agenda do aplicativo
 
     2021-2 Grupo 08
 
@@ -13,12 +13,13 @@
 
 <!DOCTYPE html>
 
-<html lang='pt-BR'> <!-- Cláusula HTML -->
-    
+<html lang="pt-BR">
+
+
     <head> <!-- Cláusula de metadados -->
 
         <!-- Título da página -->
-        <title>STUDYING</title>
+        <title>STUDYING - Agenda</title>
 
         <!-- Arquivos CSS -->
         <link rel='stylesheet' href = '../css/reset.css'>
@@ -57,19 +58,31 @@
 
         <main> <!-- Cláusula do conteúdo principal -->
 
-            <!-- Placeholder vazio para seção do aplicativo -->
-            <h2 class='fantasma'> Bem-vindo! </h2>
+            <!-- Subtítulo da página -->
+            <h2> AGENDA </h2>
+            
+            <ul class = "linha">  <!-- Lista de opções -->
 
-            <ul class='coluna'> <!-- Lista de opções -->
+                <div class = "coluna">  <!-- Coluna da esquerda -->
+                    <li> <a href="agenda/janeiro.html"> Janeiro </a> </li>
+                    <li> <a href="agenda/marco.html"> Março </a> </li>
+                    <li> <a href="agenda/maio.html"> Maio </a> </li>
+                    <li> <a href="agenda/julho.html"> Julho </a> </li>
+                    <li> <a href="agenda/setembro.html"> Setembro </a> </li>
+                    <li> <a href="agenda/novembro.html"> Novembro </a> </li>   
+                </div>
 
-                <!-- Seção de organização -->
-                <li> <a href='organizacao.html'> ORGANIZAÇÃO </a> </li>
-
-                <!-- Ceção de cursos -->
-                <li> <a href='cursos.html'> CURSOS </a> </li>
+                <div class = "coluna">  <!-- Coluna da direita -->
+                    <li> <a href="agenda/fevereiro.html"> Fevereiro </a> </li>
+                    <li> <a href="agenda/abril.html"> Abril </a> </li>
+                    <li> <a href="agenda/junho.html"> Junho </a> </li>
+                    <li> <a href="agenda/agosto.html"> Agosto </a> </li>
+                    <li> <a href="agenda/outubro.html"> Outubro </a> </li>
+                    <li> <a href="agenda/dezembro.html"> Dezembro </a> </li>
+                </div>
 
             </ul>
-
+                
         </main>
 
     </body>
