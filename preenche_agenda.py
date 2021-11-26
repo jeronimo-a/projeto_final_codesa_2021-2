@@ -26,7 +26,8 @@ COMENTARIO = '#'
 DADOS = {
     'meses': list(),
     'eventos': list(),
-    'template': list()
+    'template_agenda': list(),
+    'template_vestibular': list()
 }
 
 # loop de coleta de dados
@@ -47,13 +48,14 @@ for tipo_dados in DADOS.keys():
     DADOS[tipo_dados] = dados_limpos    # adiciona a lista de dados processados ao dicionário de dados
 
 # separa os meses apresentáveis dos não-apresentáveis (sem e com acento)
-DADOS['meses-limpos'] = DADOS['meses'][12:]
+DADOS['meses_limpos'] = DADOS['meses'][12:]
 DADOS['meses'] = DADOS['meses'][:12]
 
-# junta as strings do template em uma string só
-DADOS['template'] = '\n'.join(DADOS['template'])
+# junta as strings dos template em uma string para cada
+DADOS['template_agenda'] = '\n'.join(DADOS['template_agenda'])
+DADOS['template_vestibular'] = '\n'.join(DADOS['template_vestibular'])
 
-''' A seguir, os dados são introduzidos na template para cada mês do ano '''
+''' A seguir, os dados são introduzidos no template da agenda para cada mês do ano '''
 
 # para cada mês
 for i in range(12):
@@ -62,21 +64,36 @@ for i in range(12):
     dias = [random.randint(1, 29), random.randint(1, 29)]
     dias.sort()     # deixa em ordem crescente, para organização
 
-    # organiza as informações que serão inseridas na template
+    # organiza as informações que serão inseridas no template da agenda
     conteudo = (
-        DADOS['meses-limpos'][i],           # primeira informação
-        DADOS['meses-limpos'][i].title(),   # segunda
-        DADOS['meses-limpos'][i].upper(),   # terceia
+        DADOS['meses_limpos'][i],           # primeira informação
+        DADOS['meses_limpos'][i].title(),   # segunda
+        DADOS['meses_limpos'][i].upper(),   # terceia
         dias[0],                            # etc.
         random.choice(DADOS['eventos']),
         dias[1],
         random.choice(DADOS['eventos'])
     )
 
-    html = DADOS['template'] % conteudo     # insere as informações na template
+    html = DADOS['template_agenda'] % conteudo     # insere as informações no template da agenda
 
     # gera o novo HTML do mês
     with open('html/agenda/%s.html' % DADOS['meses'][i], 'w') as file: file.write(html)
+
+''' A seguir, os dados são introduzidos no template do vestibular para quatro vestibulares '''
+
+# para cada um dos quatro vestibulares
+for i in range(1,5):
+
+    # organiza as informações que serão inseridas no template do vestibular
+    conteudo = (i, i, i)
+
+    html = DADOS['template_vestibular'] % conteudo  # insere as informações no template do vestibular
+
+    # gera o novo HTML do vestibular
+    with open('html/vestibulares/vestibular_%d.html' % i, 'w') as file: file.write(html)
+
+
 
 
 
