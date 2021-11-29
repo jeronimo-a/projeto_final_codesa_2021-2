@@ -53,9 +53,9 @@ img {       /* Estilização de elementos img */
     position: absolute;
     top: 0;
     left: 0;
-    width: 2rem;
-    height: 3rem;
-    padding-top: .3rem;
+    width: 1.75rem;
+    height: 2.5rem;
+    padding-top: .6rem;
     padding-left: 1rem;
 }
 
@@ -78,7 +78,7 @@ ul {    /* Estilização de listas não-ordenadas */
 li {    /* Estilização de elementos de listas */
     display: block;
     margin: .5rem;
-    border: .2rem solid;
+    border: .1rem solid;
     border-color: #CF5E4A;
     padding: 1rem 1rem 1rem 1rem;
     background-size: 2rem 2rem;
