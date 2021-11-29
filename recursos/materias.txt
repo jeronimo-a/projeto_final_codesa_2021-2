@@ -1,0 +1,32 @@
+# Projeto final Co-Design de Aplicativos: STUDYING
+# 
+# Lista com nomes de matérias aleatórias
+# 
+# 2021-2 Grupo 08
+# 
+# - Breno Brolacci Schiavon
+# - Jerônimo de Abreu Afrange
+# - João Manoel Pasqua Filho
+# - Luana de Matos Sorpreso
+
+# SEM ACENTO
+
+matematica
+fisica
+geografia
+redacao
+portugues
+historia
+biologia
+quimica
+
+# COM ACENTO
+
+matemática
+física
+geografia
+redação
+português
+história
+biologia
+química

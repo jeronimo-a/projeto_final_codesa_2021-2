@@ -8,6 +8,8 @@
 # - Jerônimo de Abreu Afrange
 # - João Manoel Pasqua Filho
 # - Luana de Matos Sorpreso
+#
+# Conteúdo: nome do mês para comentário, nome do mês para título, mês all caps, dia, evento, dia, evento
 
 <!--
     Projeto final Co-Design de Aplicativos: STUDYING

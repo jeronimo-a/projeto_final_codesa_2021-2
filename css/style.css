@@ -40,6 +40,11 @@ h2 {        /* Estilização do subtítulo da páginas */
     padding-top: 1.5rem;
 }
 
+h3 {
+    padding-top: .8rem;
+    border-color: #CF5E4A;
+}
+
 a {         /* Impede que os textos com links fiquem destacados */
     color: inherit;
 }
@@ -104,9 +109,18 @@ li {    /* Estilização de elementos de listas */
 }
 
 .seletor-curso {    /* Classe para o seletor de cursos */
-    padding-top: .8rem;
-    border-width: .1rem;
-    border-color: #CF5E4A;
+    
+}
+
+.input-resumo {     /* Classe para o criador de novo resumo */
+    margin-top: 1rem;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-color: #428C99; 
+    padding: .7rem .7rem .5rem .7rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .5rem;
 }
 
 

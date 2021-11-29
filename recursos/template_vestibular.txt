@@ -1,6 +1,6 @@
 # Projeto final Co-Design de Aplicativos: STUDYING
 # 
-# Template para página da agenda de um mês qualquer
+# Template para página de um vestibular qualquer
 # 
 # 2021-2 Grupo 08
 # 
@@ -8,6 +8,8 @@
 # - Jerônimo de Abreu Afrange
 # - João Manoel Pasqua Filho
 # - Luana de Matos Sorpreso
+#
+# Conteúdo: número do vestibular para comentário, número do vest, número do vest
 
 <!--
     Projeto final Co-Design de Aplicativos: STUDYING

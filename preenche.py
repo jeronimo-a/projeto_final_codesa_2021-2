@@ -26,7 +26,9 @@ COMENTARIO = '#'
 DADOS = {
     'meses': list(),
     'eventos': list(),
+    'materias': list(),
     'template_agenda': list(),
+    'template_materia': list(),
     'template_vestibular': list()
 }
 
@@ -47,12 +49,15 @@ for tipo_dados in DADOS.keys():
 
     DADOS[tipo_dados] = dados_limpos    # adiciona a lista de dados processados ao dicionário de dados
 
-# separa os meses apresentáveis dos não-apresentáveis (sem e com acento)
+# separa os nomes apresentáveis dos não-apresentáveis (sem e com acento)
 DADOS['meses_limpos'] = DADOS['meses'][12:]
 DADOS['meses'] = DADOS['meses'][:12]
+DADOS['materias_limpas'] = DADOS['materias'][8:]
+DADOS['materias'] = DADOS['materias'][:8]
 
 # junta as strings dos template em uma string para cada
 DADOS['template_agenda'] = '\n'.join(DADOS['template_agenda'])
+DADOS['template_materia']= '\n'.join(DADOS['template_materia'])
 DADOS['template_vestibular'] = '\n'.join(DADOS['template_vestibular'])
 
 ''' A seguir, os dados são introduzidos no template da agenda para cada mês do ano '''
@@ -80,6 +85,7 @@ for i in range(12):
     # gera o novo HTML do mês
     with open('html/agenda/%s.html' % DADOS['meses'][i], 'w') as file: file.write(html)
 
+
 ''' A seguir, os dados são introduzidos no template do vestibular para quatro vestibulares '''
 
 # para cada um dos quatro vestibulares
@@ -94,6 +100,22 @@ for i in range(1,5):
     with open('html/vestibulares/vestibular_%d.html' % i, 'w') as file: file.write(html)
 
 
+''' A seguir, os dados são introduzidos no template da matéria '''
+
+# para cada uma das matérias
+for i in range(len(DADOS['materias'])):
+
+    # organiza as informações que serão inseridas no template da matéria
+    conteudo = (
+        DADOS['materias_limpas'][i],
+        DADOS['materias_limpas'][i].title(),
+        DADOS['materias_limpas'][i].upper()
+    )
+
+    html = DADOS['template_materia'] % conteudo  # insere as informações no template da matéria
+
+    # gera o novo HTML dam atéria
+    with open('html/materias/%s.html' % DADOS['materias'][i], 'w') as file: file.write(html)
 
 
 
