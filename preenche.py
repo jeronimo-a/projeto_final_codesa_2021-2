@@ -1,7 +1,7 @@
 '''
     Projeto final Co-Design de Aplicativos: STUDYING
 
-    Script auxiliar que preenche as 12 agendas automaticamente
+    Script auxiliar que preenche os HTMLs repetitivos automaticamente
 
     2021-2 Grupo 08
 
