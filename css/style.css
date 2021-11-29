@@ -109,7 +109,15 @@ li {    /* Estilização de elementos de listas */
 }
 
 .seletor-curso {    /* Classe para o seletor de cursos */
-    
+    margin-top: .5rem;
+    color: black;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-color: white; 
+    padding: .7rem .7rem .5rem .7rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .5rem;
 }
 
 .input-resumo {     /* Classe para o criador de novo resumo */
@@ -121,6 +129,13 @@ li {    /* Estilização de elementos de listas */
     text-decoration: none;
     text-align: center;
     border-radius: .5rem;
+}
+
+.resumo {
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
 }
 
 
