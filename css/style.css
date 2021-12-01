@@ -92,6 +92,30 @@ li {    /* Estilização de elementos de listas */
     text-decoration: none;
 }
 
+.pagina-principal {     /* Para elementos li da página principal */
+    width: 10.6rem;
+}
+
+.organizacao {   /* Para elementos li da página de organização */
+    width: 6.3rem;
+}
+
+.cursos {   /* Para elementos li da página de cursos */
+    width: 7.8rem;
+}
+
+.agenda {   /* Para elementos li da página da agenda */
+    width: 7.9rem;
+}
+
+.estudos {   /* Para elementos li da página de estudos */
+    width: 9rem;
+}
+
+.materia {   /* Para elementos li da página de materia */
+    width: 7rem;
+}
+
 .coluna {   /* Classe que especifica orientação em colunas */
     display: flex;
     justify-content: center;
