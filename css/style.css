@@ -50,13 +50,7 @@ a {         /* Impede que os textos com links fiquem destacados */
 }
 
 img {       /* Estilização de elementos img */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.75rem;
-    height: 2.5rem;
-    padding-top: .6rem;
-    padding-left: 1rem;
+
 }
 
 main {      /* Estilização do conteúdo principal */
@@ -90,6 +84,32 @@ li {    /* Estilização de elementos de listas */
     border-radius: .5rem;
     background-color: #428C99; 
     text-decoration: none;
+}
+
+textarea {     /* Estilização de elementos de textarea */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+    padding-top: .5rem;
+    padding-left: .6rem;
+    width: 100%;
+}
+
+select {    /* Estilização de elementos select */
+    margin-top: 1rem;
+    border: none;
+    color: black;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-color: white; 
+    padding: .7rem .7rem .5rem .7rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: .7rem;
 }
 
 .pagina-principal {     /* Para elementos li da página principal */
@@ -128,23 +148,22 @@ li {    /* Estilização de elementos de listas */
     flex-direction: row;
 }
 
+.linha-escondida {    /* Classe que especifica orientação em linhas */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
 .fantasma { /* Classe para texto fantasma usado para consistência de posicionamento com ou sem subtítulo de página */
-    color: #61DCF2;
+    visibility: hidden;
 }
 
 .seletor-curso {    /* Classe para o seletor de cursos */
-    margin-top: .5rem;
-    color: black;
-    background-size: 2rem 2rem;
-    background-repeat: no-repeat;
-    background-color: white; 
-    padding: .7rem .7rem .5rem .7rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: .5rem;
+    
 }
 
-.input-resumo {     /* Classe para o criador de novo resumo */
+.botao-input-resumo {     /* Classe para botão o criador de novo resumo */
     margin-top: 1rem;
     background-size: 2rem 2rem;
     background-repeat: no-repeat;
@@ -153,6 +172,8 @@ li {    /* Estilização de elementos de listas */
     text-decoration: none;
     text-align: center;
     border-radius: .5rem;
+    border: .1rem solid;
+    border-color: #428C99;
 }
 
 .resumo {
@@ -160,6 +181,37 @@ li {    /* Estilização de elementos de listas */
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: justify;
+}
+
+.voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.75rem;
+    height: 2.5rem;
+    padding-top: .6rem;
+    padding-left: 1rem;
+}
+
+.certinho {
+    align-self: center;
+    padding-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.botao {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .1rem solid;
+    border-color: #428C99;
+    padding: .7rem .5rem .5rem .5rem;
+    width: 99.5%;
+    background-color: #428C99;
+    color: white;
+    font: inherit;
+    text-align: center;
 }
 
 

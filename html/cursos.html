@@ -44,7 +44,7 @@
         <header> <!-- Cláusula de cabeçalho -->
 
             <!-- Imagem do link do menu, não tem função ainda -->
-            <a href='pagina_principal.html'> <img src='../recursos/icone_voltar.jpg' alt='Botão de voltar' height='50' width="50"> </a>
+            <a href='pagina_principal.html'> <img class="voltar" src='../recursos/icone_voltar.jpg' alt='Botão de voltar' height='50' width="50"> </a>
             
             <!-- Título do aplicativo -->
             <h1> <a href='pagina_principal.html'> STUDYING </a> </h1>
@@ -56,14 +56,21 @@
 
         	<h2> CURSOS </h2> <!-- Subtítulo da página -->
 
-        	<h3 class="seletor-curso"> CURSO: (curso escolhido pelo usuário) </h3>
+        	<select class="seletor-curso" onchange="updateSeletor()">
+                <option value="placeholder"> Selecionar curso... </option>
+                <option value="engenharia"> Engenharia </option>
+                <option value="arquitetura"> Arquitetura </option>
+                <option value="medicina"> Medicina </option>
+                <option value="educacao-fisica"> Educação Física </option>
+                <option value="geologia"> Geologia </option>
+            </select>
             
-            <ul class="linha">  <!-- Primeira linha -->
+            <ul class="linha-escondida">  <!-- Primeira linha -->
                 <li class="cursos"> <a href="vestibulares/vestibular_1.html"> Vestibular 1 </a> </li>
                 <li class="cursos"> <a href="vestibulares/vestibular_3.html"> Vestibular 2 </a> </li>
             </ul>
 
-            <ul class="linha">  <!-- Segunda linha -->
+            <ul class="linha-escondida">  <!-- Segunda linha -->
                 <li class="cursos"> <a href="vestibulares/vestibular_2.html"> Vestibular 3 </a> </li>
                 <li class="cursos"> <a href="vestibulares/vestibular_4.html"> Vestibular 4 </a> </li>
             </ul>

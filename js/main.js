@@ -1,3 +1,12 @@
+// Script geral
+// Projeto final de Co-Design de Aplicativos
+//
+// Grupo 08:
+// 
+// - Breno Brolacci Schiavon
+// - Jerônimo de Abreu Afrange
+// - João Manoel Pasqua Filho
+// - Luana de Matos Sorpreso
 
 const ancoras = document.getElementsByTagName("a");
 
@@ -79,8 +88,68 @@ for (var i = 0; i < ancoras.length; i++) {
 			elemento.addEventListener("mousedown", liDown, false);
 			elemento.addEventListener("mouseup", liUp, false);
 		}
+
+		else if (elemento.nodeName == "H3") {
+			elemento.addEventListener("mousedown", liDown, false);
+			elemento.addEventListener("mouseup", liUp, false);
+		}
 	}
 }
+
+function inputDown(evento) {
+	const elemento = evento.target;
+	elemento.style.color = "#CF5E4A";
+	elemento.style.borderColor = "#CF5E4A";
+}
+
+function inputUp(evento) {
+	const elemento = evento.target;
+	elemento.style.color = "#white";
+	elemento.style.borderColor = "#428C99";
+}
+
+function feedbackResumoSalvo(evento) {
+	const certinho = document.getElementsByClassName("certinho")[0];
+	certinho.style.visibility = "inherit";
+}
+
+const inputs = document.getElementsByTagName("input");
+
+for (var i = 0; i < inputs.length; i++) {
+
+	inputs[i].addEventListener("mousedown", inputDown, false);
+	inputs[i].addEventListener("mouseup", inputUp, false);
+
+	if (inputs[i].id == "enviar-resumo") {
+		inputs[i].addEventListener("mouseup", feedbackResumoSalvo, false);
+	}
+}
+
+const elementos_para_esconder = document.getElementsByClassName("linha-escondida");
+const cursos = document.getElementById("lista-cursos");
+
+for (var i = 0; i < elementos_para_esconder.length; i++) {
+	elementos_para_esconder[i].style.visibility = 'hidden';
+}
+
+function updateSeletor() {
+
+	const input_curso = document.getElementsByClassName("seletor-curso")[0];
+
+	if (input_curso.value == "placeholder") {
+		for (var i = 0; i < elementos_para_esconder.length; i++) {
+			elementos_para_esconder[i].style.visibility = 'hidden';
+		}
+	}
+
+	else {
+		for (var i = 0; i < elementos_para_esconder.length; i++) {
+			elementos_para_esconder[i].style.visibility = 'inherit';
+		}
+	}
+}
+
+
 
 
 

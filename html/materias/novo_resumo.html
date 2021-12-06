@@ -1,7 +1,7 @@
 <!--
     Projeto final Co-Design de Aplicativos: STUDYING
 
-    Página principal do aplicativo
+    Página de escrita de resumo
 
     2021-2 Grupo 08
 
@@ -21,8 +21,8 @@
         <title>STUDYING</title>
 
         <!-- Arquivos CSS -->
-        <link rel="stylesheet" href = "../css/reset.css">
-        <link rel="stylesheet" href = "../css/style.css">
+        <link rel="stylesheet" href = "../../css/reset.css">
+        <link rel="stylesheet" href = "../../css/style.css">
 
         <!-- Text encoding -->
         <meta charset="UTF-8">
@@ -44,34 +44,32 @@
         <header> <!-- Cláusula de cabeçalho -->
 
             <!-- Imagem do link do menu, não tem função ainda -->
-            <a href="pagina_principal.html"> <img class="voltar" src="../recursos/icone_voltar.jpg" alt="Botão de voltar" height="50" width="50"> </a>
+            <a href="../estudos.html"> <img class="voltar" src="../../recursos/icone_voltar.jpg" alt="Botao de voltar" height="50" width="50"> </a>
             
             <!-- Título do aplicativo -->
-            <h1> <a href="pagina_principal.html"> STUDYING </a> </h1>
+            <h1> <a href="../pagina_principal.html"> STUDYING </a> </h1>
 
         </header>
 
 
         <main> <!-- Cláusula do conteúdo principal -->
 
-            <!-- Placeholder vazio para seção do aplicativo -->
-            <h2 class="fantasma"> Bem-vindo! </h2>
+            <!-- Subtítulo da página -->
+            <h2> NOVO RESUMO </h2>
 
-            <ul class="coluna"> <!-- Lista de opções -->
-
-                <!-- Seção de organização -->
-                <li class="pagina-principal"> <a href="organizacao.html"> ORGANIZAÇÃO </a> </li>
-
-                <!-- Ceção de cursos -->
-                <li class="pagina-principal"> <a href="cursos.html"> CURSOS </a> </li>
-
-            </ul>
+            <form>
+                <textarea rows="5" cols="80" name="text" placeholder="Resumo..."></textarea>
+                <br/>
+                <h3 class="botao"> <a id="enviar-resumo" href="resumo_salvo.html"> SALVAR RESUMO </a> </h3>
+            </form>
 
         </main>
 
     </body>
 
     <!-- Arquivos JavaScript -->
-    <script src="../js/main.js"> </script>
+    <script src="../../js/main.js"> </script>
 
 </html>
+
+
