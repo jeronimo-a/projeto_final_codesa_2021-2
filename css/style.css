@@ -181,6 +181,7 @@ select {    /* Estilização de elementos select */
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .voltar {
